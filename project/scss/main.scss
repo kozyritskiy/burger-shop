@@ -1,0 +1,19 @@
+// config
+@import "./config/variables.scss";
+@import "./config/mixins.scss";
+
+// layout
+@import "./layout/fonts.scss";
+@import "./layout/base.scss";
+@import "./layout/adjustment.scss";
+
+// section
+@import "./section/make.scss";
+@import "./section/best.scss";
+@import "./section/burgers.scss";
+@import "./section/team.scss";
+@import "./section/menu.scss";
+@import "./section/reviews.scss";
+@import "./section/delivery.scss";
+@import "./section/map.scss";
+
