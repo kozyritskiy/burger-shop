@@ -11,12 +11,7 @@
     margin: 0 auto;
 	height: 100%;
 }
-.container_make {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
+
 .section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.31);
@@ -26,7 +21,7 @@
 .title {
 	font-family: Gagalin;
 	font-size: rem(72px);
-font-weight: 400;
+	font-weight: 400;
 }
 .description {
 	font-family: Lifehack;

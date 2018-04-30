@@ -76,10 +76,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
 
-.container {
-  width: 940px;
-  margin: 0 auto; }
-
 a {
   text-decoration: none; }
 
@@ -114,21 +110,6 @@ p {
   width: 940px;
   margin: 0 auto;
   height: 100%; }
-
-.container_make {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
 
 .section {
   height: 100%;
@@ -245,7 +226,7 @@ p {
   padding-top: 9.5rem; }
 
 .title_make_yellow {
-  color: #f8b43a;
+  color: #f9b43b;
   line-height: 1;
   margin-bottom: 1.25rem; }
 
