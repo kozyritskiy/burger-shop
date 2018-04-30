@@ -1,0 +1,47 @@
+.best{
+	background-image:url('../img/bg/best-bg.jpg'); 
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+.container_best{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title_best_black{
+	margin-bottom: rem(55px);
+}
+.worth__list {
+	display: flex;
+	justify-content: space-between;
+}
+.worth__item {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.worth__logo {
+	height: 90px;
+	margin-bottom: rem(35px);
+}
+
+.title_worth{
+	color:  #2f3234;
+	font-size: rem(23.97px);
+	font-weight: 500;
+	font-family: Lifehack;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: rem(20px);
+}
+.description_worth {
+	color:  #2f3234;
+	font-size: rem(14px);
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.42;
+}

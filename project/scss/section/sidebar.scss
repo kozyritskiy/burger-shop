@@ -1,0 +1,37 @@
+.sidebar {
+	 position: fixed;
+	  right: 5%;
+	  top: 10%;
+	  color: #fff;
+}
+.nav-sidebar {
+	
+}
+.nav-sidebar__list {
+	
+}
+.nav-sidebar__item {
+}
+.outer-circle {
+	@include circle(14px, transparent);
+	border: 1px solid transparent;	
+	position: relative;
+	margin-bottom: rem(15px);
+	transition: 0.4s;
+	&:hover{
+		border-color: #fff;
+	}
+}
+.inner-circle {
+	@include circle(6px, #fff);
+	margin-bottom: rem(15px);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.outer-circle_active{
+	border-color: #fff;
+}
