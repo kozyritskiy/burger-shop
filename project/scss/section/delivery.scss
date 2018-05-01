@@ -133,8 +133,6 @@
 }
 
 .right-field__radio{
-  position: absolute;
-  right: -1000px;
   &:checked + .radio-style> .radio-style__inner{
     border-radius: 50%;
     background-color:  #e35028;
@@ -161,8 +159,6 @@
   padding-top: 2px;
 }
 .right-field__checkbox{
-  position: absolute;
-  right: -1000px;
   &:checked + .checkbox-style> .checkbox-style__inner{
     height: 15px;
     background-image: url("../img/content/check.png");
