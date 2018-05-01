@@ -21,7 +21,7 @@
 							</a>
 						</div>
 						<div class="menu">
-							<nax class="nav">
+							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item"><a href="" class="nav__link">о нас</a></li>
 									<li class="nav__item"><a href="" class="nav__link">бургеры</a></li>
@@ -30,7 +30,7 @@
 									<li class="nav__item"><a href="" class="nav__link">отзывы</a></li>
 									<li class="nav__item"><a href="" class="nav__link">контакты</a></li>
 								</ul>
-							</nax>
+							</nav>
 						</div>
 						<div class="order">
 							<button class=" button order__btn">заказать</button>
@@ -188,6 +188,101 @@
 							</div>
 						</li>
 					</ul>
+				</div>
+			</section>
+			<section class="section delivery">
+				<div class="container container_delivery">
+					<h2 class="title title_delivery">закажите доставку</h2>
+					<form action="" class="form">
+						<fieldset class="fieldset left-field">
+							<div class="info">
+								<div class="info__name">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Имя</div>
+										<input type="text" placeholder="Max" class="left-field__input">
+									</label>
+								</div>
+								<div class="info__phone">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Телефон</div>
+										<input type="text" placeholder="8-029-234-32-32" class="left-field__input">
+									</label>
+								</div>
+							</div>
+							<div class="street">
+								<label for="" class="left-field__label">
+									<div class="left-field__name">Улица</div>
+									<input type="text" placeholder="Street" class="left-field__input">
+								</label>
+							</div>
+							<div class="addres">
+								<div class="addres__house">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Дом</div>
+										<input type="text" placeholder="#" class="left-field__input left-field__input_center">
+									</label>
+								</div>
+								<div class="addres__corps">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Корпус</div>
+										<input type="text" placeholder="#" class="left-field__input left-field__input_center">
+									</label>
+								</div>
+								<div class="addres__flat">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Квартира</div>
+										<input type="text" placeholder="#" class="left-field__input left-field__input_center">
+									</label>
+								</div>
+								<div class="addres__floor">
+									<label for="" class="left-field__label">
+										<div class="left-field__name">Этаж</div>
+										<input type="text" placeholder="#" class="left-field__input left-field__input_center">
+									</label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="fieldset right-field">
+							<div class="comment">
+								<label for="" class="right-field__label">
+									<div class="right-field__name">Комментарий</div>
+									<textarea class="right-field__text" name="comment" id="" placeholder="Мне понравилось"></textarea>
+								</label>
+							</div>
+							<div class="check">
+								<div class="pay">
+									<div class="pay__cash">
+										<label  class="right-field__label right-field__label_pay">
+											<input class="right-field__radio" type="radio" name="pay" value="">
+											<div class="right-field__name">Потребуется сдача</div>
+											<div class="radio-style">
+												<div class="radio-style__inner"></div>
+											</div>
+										</label>
+									</div>
+									<div class="pay__card">
+										<label  class="right-field__label right-field__label_pay">
+											<input class="right-field__radio" type="radio" name="pay" value="">
+											<div class="right-field__name ">Оплата по карте</div>
+											<div class="radio-style">
+												<div class="radio-style__inner"></div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="recall">
+									<label  class="right-field__label right-field__label_recall">
+										<input class="right-field__checkbox" type="checkbox" name="" value="">
+										<div class="right-field__name">Не перезванивать</div>
+									</label>
+								</div>
+							</div>
+							<div class="submit">
+								<button class="button button_submit">заказать</button>
+								<button class="button button_clean">очистить</button>
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</section>
 		</main>
