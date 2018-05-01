@@ -125,6 +125,42 @@
   color: #2f3234;
   margin-left: rem(10px);
 }
+.check{
+  margin-bottom: rem(20px);
+}
+.right-field__label{
+  position: relative;
+}
+
+.right-field__radio{
+  position: absolute;
+  right: -1000px;
+  &:checked + .radio-style> .radio-style__inner{
+    border-radius: 50%;
+    background-color:  #e35028;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.radio-style{
+  margin-right: rem(10px);
+  border-radius: 50%;
+  background-color:  #ffffff;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: relative;
+}
+.right-field__name_check{
+  padding-top: 2px;
+}
+
 
 
 
