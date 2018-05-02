@@ -343,6 +343,68 @@ p {
   text-align: center;
   line-height: 1.42; }
 
+.team {
+  background-image: url("../img/bg/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #c0afaa;
+  position: relative; }
+
+.teammates {
+  height: 100%;
+  width: 50%;
+  background-color: rgba(57, 59, 60, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 7.0625rem; }
+
+.container-teammates {
+  width: 64%;
+  margin: 0 auto; }
+
+.title_teammates {
+  color: #f9b43b;
+  font-size: 4.48313rem;
+  font-weight: 400;
+  margin-bottom: 2.8125rem; }
+
+.teammates__item {
+  margin-bottom: 2.1875rem; }
+
+.teammate__name {
+  font-family: Gagalin;
+  color: #f9b43b;
+  font-size: 0.87rem;
+  font-weight: 400;
+  margin-bottom: 1.0625rem; }
+
+.teammate__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.teammate__photo {
+  padding: 0 1.25rem; }
+
+.teammate__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.teammate__facts {
+  color: #ffffff;
+  font-size: 14px; }
+
+.teammate__profession {
+  font-weight: 700;
+  margin-bottom: 1.25rem; }
+
+.teammate__description {
+  font-weight: 300;
+  line-height: 1.42; }
+
 .reviews {
   height: 100%; }
 
@@ -585,7 +647,7 @@ p {
   margin-bottom: 0.9375rem; }
 
 .pay {
-  margin-bottom: 1.5625rem; }
+  margin-bottom: 1.25rem; }
 
 .button_submit, .button_clean {
   border-radius: 5px;
