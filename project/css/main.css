@@ -405,6 +405,67 @@ p {
   font-weight: 300;
   line-height: 1.42; }
 
+.smenu {
+  background-image: url("../img/bg/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative; }
+
+.title__smenu {
+  position: absolute;
+  top: 10%;
+  left: 8.6%;
+  color: #ffffff;
+  font-size: 4.48313rem;
+  font-weight: 400; }
+
+.smenu__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.smenu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  font-family: Gagalin;
+  color: #ffffff;
+  font-size: 2.4875rem;
+  font-weight: 400;
+  top: 0;
+  padding-bottom: 2.5rem; }
+
+.smenu__text {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl; }
+
+.smenu__item_meat {
+  background-image: url("../img/content/acc-meat.jpg");
+  right: 16%; }
+
+.smenu__item_veg {
+  background-image: url("../img/content/acc-vegan.jpg");
+  right: 8%; }
+
+.smenu__item_diet {
+  background-image: url("../img/content/acc-dieta.jpg");
+  right: 0%; }
+
 .reviews {
   height: 100%; }
 
@@ -755,3 +816,5 @@ input:focus:-ms-input-placeholder {
   -webkit-transition: text-indent 0.5s ease;
   -o-transition: text-indent 0.5s ease;
   transition: text-indent 0.5s ease; }
+
+/*# sourceMappingURL=main.css.map */

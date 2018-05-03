@@ -1,0 +1,53 @@
+.smenu{
+  background-image:url('../img/bg/menu-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+.title__smenu{
+  position: absolute;
+  top: 10%;
+  left: 8.6%;
+  color:  #ffffff;
+  font-size: rem(71.73px);
+  font-weight: 400;
+}
+.smenu__list{
+  height: 100%;
+  display: flex;
+}
+.smenu__item{
+  display: flex;
+  justify-content: center;
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  font-family: Gagalin;
+  color:  #ffffff;
+  font-size: rem(39.8px);
+  font-weight: 400;
+  top: 0;
+  padding-bottom: rem(40px);
+}
+.smenu__text{
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  writing-mode: tb-rl;
+}
+.smenu__item_meat{
+  background-image:url('../img/content/acc-meat.jpg');
+  right: 16%;
+}
+.smenu__item_veg{
+  background-image:url('../img/content/acc-vegan.jpg');
+  right: 8%;
+}
+.smenu__item_diet{
+  background-image:url('../img/content/acc-dieta.jpg');
+  right: 0%;
+}
