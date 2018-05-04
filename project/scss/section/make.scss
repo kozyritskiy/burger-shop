@@ -8,7 +8,7 @@
 }
 .container_make {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     flex-direction: column;
 	padding: rem(12px) 0 rem(41px) 0;
@@ -18,6 +18,9 @@
 	  display: flex;
 	  justify-content: space-between;
 	  align-items: center;
+}
+.logo__link{
+	display: block;
 }
 .logo {
 	margin-right: auto;
@@ -66,13 +69,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-grow: 0.8;
+	margin-bottom: auto;
 }
 .content__logo {
-	margin-right: rem(10px);
-}
-.content__description {
-	align-self: flex-start;
-	padding-top: rem(152px);
+	margin-right: rem(30px);
 }
 .title_make_yellow{
 	color: $yellow;
