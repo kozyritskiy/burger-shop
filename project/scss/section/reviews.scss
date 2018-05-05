@@ -17,6 +17,11 @@
 	&:hover .review__content{
 		z-index: 0;
 	}
+	@include tablets{
+		height: 25%;
+		width: 50%;
+		text-align: center;
+	}
 }
 .review {
 	height: 100%;
@@ -47,6 +52,9 @@
 	align-items: center;
 	padding: rem(20px) rem(20px);
 	background-color: rgba(79, 79, 79,.7);
+	@include phones{
+		width: 100%;
+	}
 }
 .review__title {
 	font-family: Gagalin;
@@ -55,6 +63,12 @@
 	font-weight: 400;
 	align-self: flex-start;
 	margin-bottom: rem(30px);
+	@include tablets{
+		align-self: center;
+	}
+	@include phones{
+		font-size: rem(23.87px);
+	}
 }
 .review__description {
 	color:  #ffffff;
@@ -62,16 +76,22 @@
 	font-weight: 300;
 	line-height: rem(24px);
 	margin-bottom: rem(17px);
+	@include phones{
+		display: none;
+	}
 }
 .review__button {
 	align-self: flex-start;
+	@include tablets{
+		align-self: center;
+	}
 }
 .button_review{
 	color:  #ffffff;
 	font-size: rem(13px);
 	font-weight: 500;
-	width: 110px;
-	height: 35px;
+	width: rem(110px);
+	height: rem(35px);
 	background-color:  #2f3234;
 }
 

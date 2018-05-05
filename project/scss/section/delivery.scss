@@ -15,17 +15,35 @@
   color:  #f9b43b;
   font-size: rem(71.73px);
   font-weight: 400;
+  @include phones{
+    text-align: center;
+  }
 }
 .form{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .fieldset{
   width: 49%;
   padding: 0;
   margin: 0;
   border: none;
+  @include tablets{
+    width: 61%;
+  }
+  @include phones{
+    width: 100%;
+  }
+}
+.left-field{
+  @include tablets{
+    margin-bottom: rem(20px);
+  }
 }
 .info{
   width: 100%;
@@ -54,7 +72,6 @@
 .left-field__input{
   width: 100%;
   height: 35px;
-
 }
 
 .right-field__text {
@@ -94,6 +111,14 @@
 .pay{
   display: flex;
 }
+.recall{
+  @include phones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .right-field__label_pay, .right-field__label_recall{
   display: flex;
 
@@ -106,6 +131,9 @@
 }
 .comment{
   margin-bottom: rem(15px);
+  @include phones{
+    margin-bottom: rem(40px);
+  }
 }
 .pay{
   margin-bottom: rem(20px);
@@ -113,10 +141,10 @@
 .button_submit, .button_clean{
   border-radius: 5px;
   background-color:  #e45028;
-  width: 97px;
-  height: 35px;
+  width: rem(97px);
+  height: rem(35px);
   color:  #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   cursor: pointer;
 }
@@ -127,6 +155,12 @@
 }
 .check{
   margin-bottom: rem(20px);
+  @include phones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .right-field__label{
   position: relative;
@@ -136,8 +170,8 @@
   &:checked + .radio-style> .radio-style__inner{
     border-radius: 50%;
     background-color:  #e35028;
-    width: 7px;
-    height: 7px;
+    width: rem(7px);
+    height: rem(7px);
     position: absolute;
     top: 0;
     right: 0;
@@ -150,17 +184,17 @@
   margin-right: rem(10px);
   border-radius: 50%;
   background-color:  #ffffff;
-  width: 15px;
-  height: 15px;
+  width: rem(15px);
+  height: rem(15px);
   display: block;
   position: relative;
 }
 .right-field__name_check{
-  padding-top: 2px;
+  padding-top: rem(2px);
 }
 .right-field__checkbox{
   &:checked + .checkbox-style> .checkbox-style__inner{
-    height: 15px;
+    height: rem(15px);
     background-image: url("../img/content/check.png");
     background-repeat: no-repeat;
     background-position: 50%;
@@ -169,12 +203,18 @@
 .checkbox-style{
   margin-right: rem(10px);
   background-color:  #ffffff;
-  width: 15px;
-  height: 15px;
+  width: rem(15px);
+  height: rem(15px);
   display: block;
   position: relative;
 }
-
+.submit{
+  @include phones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.5s ease;}
 input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.5s ease;}

@@ -24,11 +24,17 @@ html {
 }
 html {
     box-sizing: border-box;
+    font-size: 16px;
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        font-size: 13px;
+    }
 }
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     line-height: 1;
     color: $dark;
@@ -42,10 +48,11 @@ a {
 ul {
     padding: 0;
     margin: 0;
+    li{
+        list-style: none;
+    }
 }
-li {
-    list-style: none;
-}
+
 h1,
 h2,
 h3,
@@ -57,4 +64,12 @@ h6 {
 }
 p {
     margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img, embed, object, video {
+    max-width: 100%;
 }

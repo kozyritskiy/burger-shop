@@ -12,10 +12,16 @@
 }
 .title_best_black{
 	margin-bottom: rem(55px);
+	@include phones{
+		text-align: center;
+	}
 }
 .worth__list {
 	display: flex;
 	justify-content: space-between;
+	@include phones{
+		flex-direction: column;
+	}
 }
 .worth__item {
 	width: 30%;
@@ -23,12 +29,28 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	@include phones{
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-bottom: rem(50px);
+	}
 }
 .worth__logo {
-	height: 90px;
+	min-width: rem(100px);
+	min-height: rem(90px);
 	margin-bottom: rem(35px);
+	@include phones{
+		margin: 0 rem(30px);
+	}
 }
-
+.worth__desc{
+	@include phones{
+		display: flex;
+		flex-direction: column;
+	}
+}
 .title_worth{
 	color:  #2f3234;
 	font-size: rem(23.97px);
@@ -37,6 +59,9 @@
 	line-height: 1;
 	text-align: center;
 	margin-bottom: rem(20px);
+	@include phones{
+		text-align: left;
+	}
 }
 .description_worth {
 	color:  #2f3234;
@@ -44,4 +69,7 @@
 	font-weight: 300;
 	text-align: center;
 	line-height: 1.42;
+	@include phones{
+		text-align: left;
+	}
 }

@@ -8,7 +8,6 @@
 }
 .container_make {
     display: flex;
-
     align-items: center;
     flex-direction: column;
 	padding: rem(12px) 0 rem(41px) 0;
@@ -27,6 +26,9 @@
 }
 .menu {
   margin-right: rem(15px);
+	@include tablets{
+		display: none;
+	}
 }
 .nav__list {
 	display: flex;
@@ -46,7 +48,7 @@
   }
 }
 .nav__link {
-		color: #fff;
+	color: #fff;
 	font-size: rem(13px);
 	font-weight: 500;
 	font-family: Ubuntu;
@@ -58,8 +60,8 @@
 }
 .order__btn {
 	background-color: $orange;
-	width: 97px;
-	height: 35px;
+	width: rem(97px);
+	height: rem(35px);
 	color: #fff;
 	font-size: rem(13px);
 	font-weight: 500;
@@ -71,14 +73,22 @@
 	align-items: center;
 	flex-grow: 0.8;
 	margin-bottom: auto;
+	@include tablets{
+		flex-direction: column;
+		text-align: center;
+	}
 }
 .content__logo {
 	margin-right: rem(30px);
 }
 .title_make_yellow{
+	padding-top: rem(70px);
 	color: $yellow;
 	line-height: 1;
 	margin-bottom: rem(20px);
+	@include tablets{
+		padding-top: rem(40px);
+	}
 }
 .description_make_white {
 	color:  #ffffff;
