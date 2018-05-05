@@ -17,6 +17,7 @@
   font-weight: 400;
   @include phones{
     text-align: center;
+    font-size: rem(39.8px);
   }
 }
 .form{

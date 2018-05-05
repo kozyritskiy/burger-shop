@@ -12,6 +12,12 @@
   color:  #ffffff;
   font-size: rem(71.73px);
   font-weight: 400;
+  @include tablets{
+    font-size: rem(71.57px);
+  }
+  @include phones{
+    font-size: rem(49.49px);
+  }
 }
 .smenu__list{
   height: 100%;
@@ -32,22 +38,44 @@
   font-weight: 400;
   top: 0;
   padding-bottom: rem(40px);
+  @include tablets{
+    width: 10.5%;
+  }
+  @include phones{
+    width: 16.5%;
+  }
 }
 .smenu__text{
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   writing-mode: tb-rl;
+  @include phones{
+      font-size: rem(39.8px);
+    }
 }
 .smenu__item_meat{
   background-image:url('../img/content/acc-meat.jpg');
   right: 16%;
+  @include tablets{
+    right: 21%;
+  }
+  @include phones{
+    right: 33%;
+  }
 }
 .smenu__item_veg{
   background-image:url('../img/content/acc-vegan.jpg');
   right: 8%;
+  @include tablets{
+    right: 10.5%;
+  }
+  @include phones{
+    right: 16.5%;
+  }
 }
 .smenu__item_diet{
   background-image:url('../img/content/acc-dieta.jpg');
   right: 0%;
+
 }
