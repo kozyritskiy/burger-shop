@@ -271,6 +271,9 @@ img, embed, object, video {
     .description_make_white {
       font-size: 2.5rem; } }
 
+.arrow__img {
+  fill: #edeeee; }
+
 .sidebar {
   position: fixed;
   right: 5%;
@@ -421,6 +424,19 @@ img, embed, object, video {
   @media screen and (max-width: 480px) {
     .description_worth {
       text-align: left; } }
+
+.worth__img {
+  width: 6.25rem;
+  height: 5.625rem; }
+
+.worth__img_hand {
+  fill: #f8b537; }
+
+.worth__img_meat {
+  fill: #e34f23; }
+
+.worth__img_natural {
+  fill: #8bc13c; }
 
 .team {
   background-image: url("../img/bg/team-bg.jpg");
