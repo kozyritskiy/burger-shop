@@ -215,18 +215,19 @@ img, embed, object, video {
   font-weight: 500;
   font-family: Ubuntu; }
 
-.button {
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase; }
-
-.order__btn {
+.button_order {
   background-color: #e45028;
   width: 6.0625rem;
   height: 2.1875rem;
   color: #fff;
   font-size: 0.8125rem;
   font-weight: 500; }
+
+.button {
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .content {
   display: -webkit-box;
@@ -459,19 +460,45 @@ img, embed, object, video {
   margin-bottom: 2.1875rem; }
 
 .teammate__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: Gagalin;
-  color: #f9b43b;
+  color: #fff;
   font-size: 0.87rem;
   font-weight: 400;
   margin-bottom: 1.0625rem; }
+  .teammate__name:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #f9b43b;
+    border-bottom-width: 0px;
+    margin-right: 0.625rem; }
   @media screen and (max-width: 768px) {
     .teammate__name {
       font-size: 1.495rem; } }
 
-.teammate__info {
+.teammates__item_active .teammate__name {
+  color: #f9b43b; }
+
+.teammates__item_active .teammate__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.teammates__item_active .teammate__name:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.teammate__info {
+  display: none; }
   @media screen and (max-width: 768px) {
     .teammate__info {
       -webkit-box-orient: vertical;
@@ -481,7 +508,7 @@ img, embed, object, video {
 
 .teammate__photo {
   min-width: 100px;
-  margin: 0 1.25rem 1.25rem 1.25rem; }
+  margin: 0 1.25rem 0 1.25rem; }
 
 .teammate__img {
   height: 6.25rem;

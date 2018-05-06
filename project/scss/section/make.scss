@@ -53,12 +53,7 @@
 	font-weight: 500;
 	font-family: Ubuntu;
 }
-.button{
-	border: none;
-	border-radius: 5px;
-	text-transform: uppercase;
-}
-.order__btn {
+.button_order{
 	background-color: $orange;
 	width: rem(97px);
 	height: rem(35px);
@@ -66,7 +61,12 @@
 	font-size: rem(13px);
 	font-weight: 500;
 }
-
+.button{
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
 .content {
 	display: flex;
 	justify-content: center;
