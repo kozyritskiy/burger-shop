@@ -1057,4 +1057,8 @@ input:focus:-ms-input-placeholder {
   -o-transition: text-indent 0.5s ease;
   transition: text-indent 0.5s ease; }
 
+.icon {
+  width: 20px;
+  height: 20px; }
+
 /*# sourceMappingURL=main.css.map */
