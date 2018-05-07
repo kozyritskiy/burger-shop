@@ -1,6 +1,60 @@
+.map{
+  background-color: rgb(176, 190, 197);
+  position: relative;
+}
+.footer{
+  background-color: rgb(9, 9, 9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+.container_footer{
+  display: flex;
+}
+.location,.socials{
+  width: 50%;
+}
+.location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socials{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socials__item{
+  margin-left: rem(20px);
+}
+.location__addres{
+  color:  #ffffff;
+  font-size: rem(14px);
+  font-weight: 300;
+  margin-bottom: rem(5px);
+}
+.location__icon{
+  width: 12px;
+  height: 12px;
+  fill:  #e45028;
+  margin-right: rem(5px);
+}
+.location__link{
+  color:  #e45028;
+  font-size: 14px;
+  font-weight: 700;
+}
+.socials__list{
+  display: flex;
+}
 .icon{
   width: 20px;
   height: 20px;
+  fill: rgb(90, 90, 90);
+  transition: .4s;
   &:hover{
+    fill: #fff;
   }
 }
