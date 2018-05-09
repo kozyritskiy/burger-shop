@@ -11,6 +11,9 @@
     align-items: center;
     flex-direction: column;
 	padding: rem(12px) 0 rem(41px) 0;
+	@include phones{
+		padding: rem(10px) 0 rem(5px) 0;
+	}
 }
 .header {
 	 width: 100%;
@@ -104,4 +107,6 @@
 }
 .arrow__img{
 	fill: rgb(237, 238, 238);
+	width: rem(30px);
+	height: rem(15px);
 }
