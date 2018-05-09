@@ -13,6 +13,7 @@
   color:  #ffffff;
   font-size: rem(71.73px);
   font-weight: 400;
+  z-index: 1;
 }
 .smenu__list{
   height: 100%;
@@ -21,6 +22,8 @@
 }
 .smenu__item{
   display: flex;
+  position: relative;
+  z-index: 5;
 }
 .smenu__trigger{
   display: flex;

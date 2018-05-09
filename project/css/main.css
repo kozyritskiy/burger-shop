@@ -568,7 +568,8 @@ img, embed, object, video {
   left: 8.6%;
   color: #ffffff;
   font-size: 4.48313rem;
-  font-weight: 400; }
+  font-weight: 400;
+  z-index: 1; }
 
 .smenu__list {
   height: 100%;
@@ -582,7 +583,9 @@ img, embed, object, video {
 .smenu__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative;
+  z-index: 5; }
 
 .smenu__trigger {
   display: -webkit-box;
