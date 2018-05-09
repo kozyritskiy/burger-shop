@@ -80,6 +80,9 @@
 }
 .content__logo {
 	margin-right: rem(30px);
+	@include tablets{
+		margin-right: 0;
+	}
 }
 .title_make_yellow{
 	padding-top: rem(70px);

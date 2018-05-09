@@ -15,6 +15,9 @@
   color:  #f9b43b;
   font-size: rem(71.73px);
   font-weight: 400;
+  @include tablets{
+    text-align: center;
+  }
   @include phones{
     text-align: center;
     font-size: rem(39.8px);

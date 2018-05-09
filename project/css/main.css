@@ -253,6 +253,9 @@ img, embed, object, video {
 
 .content__logo {
   margin-right: 1.875rem; }
+  @media screen and (max-width: 768px) {
+    .content__logo {
+      margin-right: 0; } }
 
 .title_make_yellow {
   padding-top: 4.375rem;
@@ -498,7 +501,10 @@ img, embed, object, video {
     margin-right: 0.625rem; }
   @media screen and (max-width: 768px) {
     .teammate__name {
-      font-size: 1.495rem; } }
+      font-size: 1.495rem;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .teammates__item_active .teammate__name {
   color: #f9b43b; }
@@ -791,6 +797,9 @@ img, embed, object, video {
   color: #f9b43b;
   font-size: 4.48313rem;
   font-weight: 400; }
+  @media screen and (max-width: 768px) {
+    .title_delivery {
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .title_delivery {
       text-align: center;
@@ -1150,5 +1159,215 @@ input:focus:-ms-input-placeholder {
   transition: .4s; }
   .icon:hover {
     fill: #fff; }
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -o-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -ms-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%); }
+
+.container_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 58.75rem;
+  margin: 0 0.625rem 0 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .container_slider {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 75%; } }
+  @media screen and (max-width: 480px) {
+    .container_slider {
+      width: 100%; } }
+
+.left-arrow__icon {
+  width: 1.6875rem;
+  height: 0.9375rem;
+  fill: #fff;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.right-arrow__icon {
+  width: 1.6875rem;
+  height: 0.9375rem;
+  fill: #fff;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.burger-pic, .burger-info {
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .burger-pic, .burger-info {
+      width: 70%; } }
+  @media screen and (max-width: 480px) {
+    .burger-pic, .burger-info {
+      width: 100%; } }
+
+.burger-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 4.8125rem 0 3.375rem 0; }
+  @media screen and (max-width: 768px) {
+    .burger-pic {
+      padding: 4.8125rem 0 0 0; } }
+
+.consist, .weight {
+  position: absolute;
+  left: 0; }
+
+.consist {
+  top: 0;
+  border-radius: 5px;
+  background-color: rgba(227, 80, 40, 0.4);
+  width: 5rem;
+  height: 5rem; }
+
+.weight {
+  bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .weight {
+      top: 0;
+      left: 85%; } }
+
+.text-svg {
+  font-size: 1.25rem; }
+
+.weight-svg {
+  width: 2.125rem;
+  height: 0.875rem; }
+
+.weight__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Gagalin;
+  text-transform: uppercase;
+  color: #fad49e; }
+
+.consist-logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.consist__icon {
+  width: 2.875rem;
+  height: 2.75rem;
+  fill: #fff;
+  margin-bottom: 0.3125rem; }
+
+.consist__text {
+  font-family: Gagalin;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 400; }
+
+.weight-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.weight__icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: #fad49e;
+  margin-bottom: 0.3125rem; }
+
+.title_burger {
+  color: white;
+  margin-bottom: 2.1875rem; }
+  @media screen and (max-width: 768px) {
+    .title_burger {
+      text-align: center; } }
+
+.burger-desc {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.42;
+  margin-bottom: 1.5625rem; }
+  @media screen and (max-width: 768px) {
+    .burger-desc {
+      text-align: center; } }
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .price {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.price__money {
+  font-family: Gagalin;
+  color: #e35028;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  margin-right: 1.875rem; }
+
+.price__value {
+  font-size: 4.475rem; }
+
+.order_burger {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
 
 /*# sourceMappingURL=main.css.map */
