@@ -23,7 +23,7 @@
 .smenu__item{
   display: flex;
   position: relative;
-  z-index: 5;
+  z-index: 2;
 }
 .smenu__trigger{
   display: flex;
@@ -54,15 +54,14 @@
   background-image:url('../img/content/acc-dieta.jpg');
 }
 .smenu__content{
-  width: 49%;
+  width: 0;
   overflow: hidden;
   background-color: rgba(57, 59, 60,.93);
-
 }
 .smenu__text{
   color: white;
   line-height: 1.42;
-  font-size: rem(12px);
+  font-size: rem(14px);
   transition: width 2s;
   padding: rem(80px) rem(30px) 0 rem(30px);
 }

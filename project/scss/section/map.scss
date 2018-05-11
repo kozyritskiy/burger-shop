@@ -49,7 +49,9 @@
   &:first-child{
     margin-left: 0;
   }
-
+}
+.socials__link{
+  display: flex;
 }
 .location__addres{
   color:  #ffffff;
