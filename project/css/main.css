@@ -294,21 +294,26 @@ img, embed, object, video {
   .hamburger:hover .hamburger__item:first-child {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg); }
+    transform: rotate(360deg);
+    background-color: #f9b43b;
+    height: 0.5rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
   .hamburger:hover .hamburger__item:nth-child(2) {
     -webkit-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     transform: rotate(-360deg);
-    margin-bottom: 0.1875rem; }
+    margin-bottom: 0.1875rem;
+    background-color: saddlebrown; }
   .hamburger:hover .hamburger__item:last-child {
     margin-bottom: 0;
     background-color: transparent;
-    color: #fff;
     height: 0.75rem;
     font-size: 0.9375rem;
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg); }
+    transform: rotate(360deg);
+    color: #fff; }
   @media screen and (max-width: 768px) {
     .hamburger {
       display: -webkit-box;
@@ -321,9 +326,9 @@ img, embed, object, video {
   border-radius: 2px;
   background-color: #fff;
   margin-bottom: 0.5625rem;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   font-size: 0; }
   .hamburger__item:last-child {
     margin-bottom: 0; }

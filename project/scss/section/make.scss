@@ -120,18 +120,23 @@
 	cursor: pointer;
 	&:hover .hamburger__item:first-child{
 		transform: rotate(360deg);
+		background-color: $yellow;
+		height: rem(8px);
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
 	}
 	&:hover .hamburger__item:nth-child(2){
 		transform: rotate(-360deg);
 		margin-bottom: rem(3px);
+		background-color: saddlebrown;
 	}
 	&:hover .hamburger__item:last-child{
 		margin-bottom: 0;
 		background-color: transparent;
-		color: #fff;
 		height: rem(12px);
 		font-size: rem(15px);
 		transform: rotate(360deg);
+		color: #fff;
 	}
 	@include tablets{
 		display: flex;
@@ -143,7 +148,7 @@
 	border-radius: 2px;
 	background-color: #fff;
 	margin-bottom: rem(9px);
-	transition: 1s;
+	transition: .5s;
 	font-size: 0;
 	&:last-child {
 		margin-bottom: 0;
