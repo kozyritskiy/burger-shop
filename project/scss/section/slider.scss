@@ -64,15 +64,17 @@
   background-color:  rgba(227, 80, 40, 0.4);
   width: rem(80px);
   height: rem(80px);
+  cursor: pointer;
+  &:hover .consist__list{
+    opacity: 1;
+    z-index: 10;
+  }
 }
 .weight{
   bottom: 0;
   @include tablets{
     top: 0;
     left: 85%;
-  }
-  @include phones{
-
   }
 }
 .text-svg{
@@ -96,7 +98,7 @@
   justify-content: center;
   align-items: center;
 }
-.consist__icon{
+.consist__burger{
   width: rem(46px);
   height: rem(44px);
   fill: #fff;
@@ -157,4 +159,55 @@
 }
 .order_burger{
   align-self: flex-end;
+}
+.consist__list{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: rem(270px);
+  background-color: rgba(255, 255, 255,.9);
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  padding: rem(15px) rem(20px);
+  border-radius: rem(5px);
+  transition: .5s;
+  z-index: -10;
+  @include phones{
+    width: rem(205px);
+  }
+}
+.consist__item{
+  display: flex;
+  align-items: center;
+  font-size: rem(14px);
+  margin-bottom: rem(20px);
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.consist__product{
+  font-weight: 500;
+  margin-right: auto;
+  text-transform: capitalize;
+}
+.consist__weight{
+  font-weight: 300;
+}
+.consist__icon{
+  width: rem(40px);
+  height: rem(40px);
+  margin-right: rem(25px);
+  @include phones{
+    margin-right: rem(10px);
+  }
+}
+.consist__icon_color_red{
+  fill: #e25028;
+}
+.consist__icon_color_green{
+  fill: #8ac03e;
+}
+.consist__icon_color_yellow{
+  fill: #f8b43a;
 }

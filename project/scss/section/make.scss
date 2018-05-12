@@ -25,6 +25,8 @@
 	display: block;
 }
 .logo {
+	position: relative;
+	z-index: 20;
 	margin-right: auto;
 }
 .menu {
@@ -63,6 +65,9 @@
 	color: #fff;
 	font-size: rem(13px);
 	font-weight: 500;
+	@include tablets{
+		margin-right: rem(30px);
+	}
 }
 .button{
 	border: none;
@@ -109,4 +114,40 @@
 	fill: rgb(237, 238, 238);
 	width: rem(30px);
 	height: rem(15px);
+}
+.hamburger{
+	cursor: pointer;
+	&:hover .hamburger__item:first-child{
+		transform: rotate(360deg);
+	}
+	&:hover .hamburger__item:nth-child(2){
+		transform: rotate(-360deg);
+		margin-bottom: rem(3px);
+	}
+	&:hover .hamburger__item:last-child{
+		margin-bottom: 0;
+		background-color: transparent;
+		color: #fff;
+		height: rem(12px);
+		font-size: rem(15px);
+		transform: rotate(360deg);
+	}
+}
+.hamburger__item{
+	width: rem(40px);
+	height: rem(5px);
+	border-radius: 2px;
+	background-color: #fff;
+	margin-bottom: rem(9px);
+	transition: 1s;
+	font-size: 0;
+	@include tablets{
+		display: flex;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.hamburger__menu{
+	color: #fff;
 }

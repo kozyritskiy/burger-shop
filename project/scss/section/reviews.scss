@@ -93,5 +93,18 @@
 	width: rem(110px);
 	height: rem(35px);
 	background-color:  #2f3234;
+	@include phones{
+		display: none;
+	}
 }
-
+.button_mobile{
+	color:  #ffffff;
+	font-size: rem(13px);
+	font-weight: 500;
+	background-color:  #2f3234;
+	display: none;
+	padding: rem(10px) rem(20px);
+	@include phones{
+		display: flex;
+	}
+}

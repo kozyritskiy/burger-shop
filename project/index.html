@@ -12,6 +12,24 @@
 <body>
 	<div class="wrapper">
 		<main class="maincontent">
+			<section class="section full-menu visuallyhidden">
+				<div class="container_full-menu">
+					<div class="full-menu__close">
+						<div class="cross">
+							<div class="cross__span cross__span_first"></div>
+							<div class="cross__span cross__span_second"></div>
+						</div>
+					</div>
+					<ul class="full-menu__list">
+						<li class="full-menu__item"><a href="" class="nav__link">о нас</a></li>
+						<li class="full-menu__item"><a href="" class="nav__link">бургеры</a></li>
+						<li class="full-menu__item"><a href="" class="nav__link">команда</a></li>
+						<li class="full-menu__item"><a href="" class="nav__link">меню</a></li>
+						<li class="full-menu__item"><a href="" class="nav__link">отзывы</a></li>
+						<li class="full-menu__item"><a href="" class="nav__link">контакты</a></li>
+					</ul>
+				</div>
+			</section>
 			<section class="section make">
 				<div class="container container_make">
 					<header class="header">
@@ -34,6 +52,13 @@
 						</div>
 						<div class="order">
 							<button class=" button button_order">заказать</button>
+						</div>
+						<div class="hamburger">
+							<ul class="hamburger__list">
+								<li class="hamburger__item"></li>
+								<li class="hamburger__item"></li>
+								<li class="hamburger__item">menu</li>
+							</ul>
 						</div>
 					</header>
 						<div class="content">
@@ -104,11 +129,55 @@
 					<div class="burger-pic">
 						<div class="consist">
 							<div class="consist-logo">
-								<svg class="consist__icon" width="40" height="40">
+								<svg class="consist__burger" width="40" height="40">
 									<use xlink:href="./img/svg/sprite/mysprite.svg#burger"></use>
 								</svg>
 								<div class="consist__text">состав</div>
 							</div>
+							<ul class="consist__list">
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_red" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#beef"></use>
+									</svg>
+									<div class="consist__product">говядина</div>
+									<div class="consist__weight">300г</div>
+								</li>
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_yellow" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#buns"></use>
+									</svg>
+									<div class="consist__product">булочки</div>
+									<div class="consist__weight">100г</div>
+								</li>
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_green" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#salad"></use>
+									</svg>
+									<div class="consist__product">зелень</div>
+									<div class="consist__weight">70г</div>
+								</li>
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_red" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#sauce"></use>
+									</svg>
+									<div class="consist__product">соус</div>
+									<div class="consist__weight">150г</div>
+								</li>
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_green" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#cucumber"></use>
+									</svg>
+									<div class="consist__product">овощи</div>
+									<div class="consist__weight">200г</div>
+								</li>
+								<li class="consist__item">
+									<svg class="consist__icon consist__icon_color_yellow" width="40" height="40">
+										<use xlink:href="./img/svg/sprite/mysprite.svg#cheese"></use>
+									</svg>
+									<div class="consist__product">сыр</div>
+									<div class="consist__weight">80г</div>
+								</li>
+							</ul>
 						</div>
 						<div class="picture">
 							<img src="./img/slider/dark-burger.png" alt="picture__img" class="picture__img">
@@ -263,6 +332,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -276,6 +346,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -289,6 +360,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -302,6 +374,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -315,6 +388,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -328,6 +402,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -341,6 +416,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
@@ -354,6 +430,7 @@
 									</div>
 									<div class="review__button">
 										<button class="button button_review">подробнее</button>
+										<button class="button button_mobile">читать отзыв</button>
 									</div>
 								</div>
 							</div>
