@@ -1,5 +1,6 @@
 .full-menu{
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   background-color: #2f3234;
 }
@@ -11,10 +12,16 @@
   height: 100%;
   width: 100%;
 }
-.full-menu__close{
+.full-menu__logo{
   position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.full-menu__close{
+  position: fixed;
   top: 3%;
   right: 5%;
+  cursor: pointer;
 }
 .full-menu__list{
   display: flex;

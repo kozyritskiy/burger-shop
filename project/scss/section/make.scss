@@ -116,6 +116,7 @@
 	height: rem(15px);
 }
 .hamburger{
+	display: none;
 	cursor: pointer;
 	&:hover .hamburger__item:first-child{
 		transform: rotate(360deg);
@@ -132,6 +133,9 @@
 		font-size: rem(15px);
 		transform: rotate(360deg);
 	}
+	@include tablets{
+		display: flex;
+	}
 }
 .hamburger__item{
 	width: rem(40px);
@@ -141,13 +145,7 @@
 	margin-bottom: rem(9px);
 	transition: 1s;
 	font-size: 0;
-	@include tablets{
-		display: flex;
-	}
 	&:last-child {
 		margin-bottom: 0;
 	}
-}
-.hamburger__menu{
-	color: #fff;
 }
