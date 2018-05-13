@@ -8,16 +8,36 @@
   background: -ms-linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
 }
-.container_slider{
+.burgers{
+  margin: 0 rem(10px);
+
+  @include tablets{
+    margin: 0;
+    width: 80%;
+  }
+  @include phones{
+    width: 100%;
+  }
+}
+.burgers__list{
+  @include tablets{
+  }
+  @include phones{
+    width: 100%;
+  }
+}
+.burgers__item{
+  width: 100%;
+}
+.burgers__slide{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: rem(940px);
-  margin: 0 rem(10px) 0 rem(20px);
   @include tablets{
     flex-direction: column;
-    width: 75%;
+    width: 100%;
   }
   @include phones{
     width: 100%;

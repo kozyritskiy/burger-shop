@@ -17,7 +17,6 @@
   @include tablets{
     width: 100%;
     text-align: center;
-
   }
 }
 .container-teammates{
@@ -65,23 +64,26 @@
   }
   .teammate__info{
     display: flex;
+    align-items: flex-start;
+    @include tablets{
+      align-items: center;
+    }
   }
   .teammate__name{
     &:before{
       transform: rotate(180deg);
     }
   }
-
 }
 
 .teammate__info{
-  display: none;
   @include tablets{
     flex-direction: column;
   }
 }
 .teammate__photo{
-  min-width: 100px;
+  display: block;
+  min-width: rem(100px);
   margin: 0 rem(20px) 0 rem(20px);
 }
 .teammate__img{
@@ -100,4 +102,9 @@
 .teammate__description{
   font-weight: 300;
   line-height: 1.42;
+}
+.teammate__wrap{
+  transition: 1s;
+  height: 0;
+  overflow: hidden;
 }
