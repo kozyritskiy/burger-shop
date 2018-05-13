@@ -36,7 +36,7 @@
   margin-bottom: rem(35px);
 }
 .teammate__name{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-family: Gagalin;
   color:  #fff;
@@ -52,22 +52,24 @@
     border-top-color:#f9b43b;
     border-bottom-width: 0px;
     margin-right: rem(10px);
+    transition: .8s;
   }
   @include tablets{
     font-size: rem(23.92px);
     justify-content: center;
   }
 }
+.teammate__info{
+  display: flex;
+  align-items: flex-start;
+  @include tablets{
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .teammates__item_active{
   .teammate__name{
     color: #f9b43b;
-  }
-  .teammate__info{
-    display: flex;
-    align-items: flex-start;
-    @include tablets{
-      align-items: center;
-    }
   }
   .teammate__name{
     &:before{
@@ -75,16 +77,13 @@
     }
   }
 }
-
-.teammate__info{
-  @include tablets{
-    flex-direction: column;
-  }
-}
 .teammate__photo{
-  display: block;
+  display: inline-block;
   min-width: rem(100px);
   margin: 0 rem(20px) 0 rem(20px);
+  @include tablets{
+    margin-bottom: rem(10px);
+  }
 }
 .teammate__img{
   height: rem(100px);
@@ -103,8 +102,8 @@
   font-weight: 300;
   line-height: 1.42;
 }
-.teammate__wrap{
-  transition: 1s;
+.teammates__wrap{
+  transition: .8s;
   height: 0;
   overflow: hidden;
 }

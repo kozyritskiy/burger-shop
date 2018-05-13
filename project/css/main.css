@@ -510,6 +510,9 @@ img, embed, object, video {
   height: 100%;
   width: 50%;
   background-color: rgba(57, 59, 60, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
   padding-top: 7.0625rem; }
   @media screen and (max-width: 768px) {
     .teammates {
@@ -533,9 +536,9 @@ img, embed, object, video {
   margin-bottom: 2.1875rem; }
 
 .teammate__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -552,7 +555,10 @@ img, embed, object, video {
     border: 5px solid transparent;
     border-top-color: #f9b43b;
     border-bottom-width: 0px;
-    margin-right: 0.625rem; }
+    margin-right: 0.625rem;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s; }
   @media screen and (max-width: 768px) {
     .teammate__name {
       font-size: 1.495rem;
@@ -560,10 +566,7 @@ img, embed, object, video {
       -ms-flex-pack: center;
       justify-content: center; } }
 
-.teammates__item_active .teammate__name {
-  color: #f9b43b; }
-
-.teammates__item_active .teammate__info {
+.teammate__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,27 +574,30 @@ img, embed, object, video {
   -ms-flex-align: start;
   align-items: flex-start; }
   @media screen and (max-width: 768px) {
-    .teammates__item_active .teammate__info {
+    .teammate__info {
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.teammates__item_active .teammate__name {
+  color: #f9b43b; }
 
 .teammates__item_active .teammate__name:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-@media screen and (max-width: 768px) {
-  .teammate__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; } }
-
 .teammate__photo {
-  display: block;
+  display: inline-block;
   min-width: 6.25rem;
   margin: 0 1.25rem 0 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .teammate__photo {
+      margin-bottom: 0.625rem; } }
 
 .teammate__img {
   height: 6.25rem;
@@ -610,10 +616,10 @@ img, embed, object, video {
   font-weight: 300;
   line-height: 1.42; }
 
-.teammate__wrap {
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+.teammates__wrap {
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
   height: 0;
   overflow: hidden; }
 
