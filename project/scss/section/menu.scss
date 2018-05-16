@@ -54,25 +54,30 @@
   background-image:url('../img/content/acc-dieta.jpg');
 }
 .smenu__content{
+  transition: 1s;
   width: 0;
   overflow: hidden;
   background-color: rgba(57, 59, 60,.93);
 }
 .smenu__text{
+  min-width: rem(540px);
   color: white;
   line-height: 1.42;
   font-size: rem(14px);
-  transition: width 2s;
   padding: rem(80px) rem(30px) 0 rem(30px);
+  @include phones{
+    min-width: 250px;
+  }
 }
 .smenu__item_active{
   .smenu__title{
     color: #f9b43b;
   }
-  .smenu__content{
+  .smenu__content {
+    transition: 1s;
     width: rem(540px);
     @include tablets{
       width: 100%;
     }
-    }
+  }
   }

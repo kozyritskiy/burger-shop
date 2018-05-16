@@ -650,6 +650,9 @@ img, embed, object, video {
   justify-content: flex-end; }
 
 .smenu__item {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,27 +696,37 @@ img, embed, object, video {
   background-image: url("../img/content/acc-dieta.jpg"); }
 
 .smenu__content {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   width: 0;
   overflow: hidden;
   background-color: rgba(57, 59, 60, 0.93); }
 
 .smenu__text {
+  min-width: 33.75rem;
   color: white;
   line-height: 1.42;
   font-size: 0.875rem;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-  transition: width 2s;
   padding: 5rem 1.875rem 0 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .smenu__text {
+      min-width: 250px; } }
 
-.smenu__item_active .smenu__title {
-  color: #f9b43b; }
-
-.smenu__item_active .smenu__content {
-  width: 33.75rem; }
-  @media screen and (max-width: 768px) {
-    .smenu__item_active .smenu__content {
-      width: 100%; } }
+.smenu__item_active {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s; }
+  .smenu__item_active .smenu__title {
+    color: #f9b43b; }
+  .smenu__item_active .smenu__content {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    width: 33.75rem; }
+    @media screen and (max-width: 768px) {
+      .smenu__item_active .smenu__content {
+        width: 100%; } }
 
 .reviews {
   height: 100%; }
