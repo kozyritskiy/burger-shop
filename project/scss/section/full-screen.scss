@@ -28,8 +28,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: rem(24px);
-  font-weight: 400;
   text-transform: uppercase;
 }
 .full-menu__item{
@@ -45,6 +43,11 @@
   &:last-child:after {
     display: none;
   }
+}
+.full-menu__link{
+  font-size: rem(24px);
+  font-weight: 400;
+  color: #fff;
 }
 .cross{
   position: relative;

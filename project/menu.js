@@ -8,8 +8,6 @@ smenuList.addEventListener('click', function (e) {
         let item = current.parentNode;
         let list = item.parentNode;
         let items = list.children;
-        let content = current.nextElementSibling;
-        let contentHeight = content.firstElementChild.clientHeight;
 
         if (!item.classList.contains('smenu__item_active')) {
             for (let i = 0; i < items.length; i++) {
@@ -23,7 +21,6 @@ smenuList.addEventListener('click', function (e) {
                             items[i].classList.add("visuallyhidden");
                         }
                     }
-                    console.log('win');
                 });
         } else {
             item.classList.remove('smenu__item_active');
@@ -33,9 +30,7 @@ smenuList.addEventListener('click', function (e) {
                         setTimeout(function () {
                             items[i].classList.remove("visuallyhidden");
                         },1000);
-
                     }
-                    console.log('win again');
                 });
         }
     }

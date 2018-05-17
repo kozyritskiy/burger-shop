@@ -1,0 +1,52 @@
+.wrap-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(63,66,68,.92);
+  z-index: 10;
+}
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.message{
+  position: relative;
+  width: 100%;
+  max-width: rem(500px);
+  background-color: #fff;
+  padding: rem(30px) rem(20px);
+  border-radius: rem(5px);
+  color: black;
+  @include tablets{
+    width: 70%;
+  }
+  @include phones{
+    width: 95%;
+  }
+}
+.message__name{
+  font-family: Gagalin;
+  font-size: rem(14px);
+  font-weight: normal;
+  color: #2f3234;
+  text-transform: uppercase;
+  margin-bottom: rem(25px);
+}
+.message__review{
+  font-size: rem(14px);
+  line-height: 1.42;
+}
+.message__close{
+  position: absolute;
+  top: rem(10px);
+  right: rem(10px);
+}
+.cross_message{
+  cursor: pointer;
+}
+.cross__span_color_orange{
+  background-color: #ec8468;
+}

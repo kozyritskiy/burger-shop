@@ -118,19 +118,17 @@
 .hamburger{
 	display: none;
 	cursor: pointer;
-	&:hover .hamburger__item:first-child{
-		transform: rotate(360deg);
+	 .hamburger__item:first-child{
 		background-color: $yellow;
 		height: rem(8px);
 		border-top-left-radius: 7px;
 		border-top-right-radius: 7px;
 	}
-	&:hover .hamburger__item:nth-child(2){
-		transform: rotate(-360deg);
+	.hamburger__item:nth-child(2){
 		margin-bottom: rem(3px);
 		background-color: saddlebrown;
 	}
-	&:hover .hamburger__item:last-child{
+	.hamburger__item:last-child{
 		margin-bottom: 0;
 		background-color: transparent;
 		height: rem(12px);
