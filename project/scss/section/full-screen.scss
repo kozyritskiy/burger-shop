@@ -19,8 +19,8 @@
 }
 .full-menu__close{
   position: fixed;
-  top: 3%;
-  right: 5%;
+  top: rem(50px);
+  right: rem(50px);
   cursor: pointer;
 }
 .full-menu__list{

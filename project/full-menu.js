@@ -1,16 +1,32 @@
 "use strict";
-
+(function () {
+let mainContent = document.querySelector('.maincontent');
 let ham = document.querySelector(".hamburger");
-let fullMenu = document.querySelector(".full-menu");
-let closeMenu = document.querySelector(".full-menu__close");
+let template = document.querySelector('#fullMenu').innerHTML;
+let overlay = createOverlay(template);
 
-ham.addEventListener("click", function (e) {
-    fullMenu.classList.remove("visuallyhidden");
-    ham.classList.add("visuallyhidden");
+ham.addEventListener("click", function () {
+    overlay.open();
 });
 
-closeMenu.addEventListener("click", function (e) {
-    fullMenu.classList.add("visuallyhidden");
-    ham.classList.remove("visuallyhidden");
-});
+function createOverlay(template) {
+    let fragment = document.createElement('div');
 
+    fragment.innerHTML = template;
+
+    let fullMenu = fragment.querySelector(".full-menu");
+    let closeMenu = fragment.querySelector(".full-menu__close");
+
+    fragment = null;
+
+    closeMenu.addEventListener('click', function () {
+        mainContent.removeChild(fullMenu);
+    });
+
+    return {
+        open() {
+            mainContent.insertBefore(fullMenu, mainContent.firstChild);
+        }
+    }
+}
+}());

@@ -1621,8 +1621,8 @@ input:focus:-ms-input-placeholder {
 
 .full-menu__close {
   position: fixed;
-  top: 3%;
-  right: 5%;
+  top: 3.125rem;
+  right: 3.125rem;
   cursor: pointer; }
 
 .full-menu__list {

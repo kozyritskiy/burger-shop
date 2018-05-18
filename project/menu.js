@@ -3,8 +3,12 @@ let smenuList = document.querySelector(".smenu__list");
 smenuList.addEventListener('click', function (e) {
     e.preventDefault();
 
-    if (e.target.classList.contains('smenu__trigger')) {
+    if (e.target.classList.contains('smenu__trigger') || e.target.classList.contains('smenu__title')) {
+
         let current = e.target;
+        if (current.tagName === 'DIV') {
+            current = current.parentNode;
+        }
         let item = current.parentNode;
         let list = item.parentNode;
         let items = list.children;

@@ -21,29 +21,6 @@
 <body>
 <div class="wrapper">
     <main class="maincontent">
-        <section class="section full-menu visuallyhidden">
-            <div class="container_full-menu">
-                <div class="full-menu__logo">
-                    <a href="#" class="logo__link">
-                        <img src="./img/svg/logo.svg" alt="logo__img" class="logo__img">
-                    </a>
-                </div>
-                <div class="full-menu__close">
-                    <div class="cross">
-                        <div class="cross__span cross__span_first"></div>
-                        <div class="cross__span cross__span_second"></div>
-                    </div>
-                </div>
-                <ul class="full-menu__list">
-                    <li class="full-menu__item"><a href="" class="full-menu__link">о нас</a></li>
-                    <li class="full-menu__item"><a href="" class="full-menu__link">бургеры</a></li>
-                    <li class="full-menu__item"><a href="" class="full-menu__link">команда</a></li>
-                    <li class="full-menu__item"><a href="" class="full-menu__link">меню</a></li>
-                    <li class="full-menu__item"><a href="" class="full-menu__link">отзывы</a></li>
-                    <li class="full-menu__item"><a href="" class="full-menu__link">контакты</a></li>
-                </ul>
-            </div>
-        </section>
         <section class="section make">
             <div class="container container_make">
                 <header class="header">
@@ -345,7 +322,7 @@
                 </li>
                 <li class="smenu__item">
                     <a href="" class="smenu__trigger smenu__trigger_veg">
-                        <span class="smenu__title">вегетарианское</span>
+                        <div class="smenu__title">вегетарианское</div>
                     </a>
                     <div class="smenu__content ">
                         <p class="smenu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet
@@ -356,7 +333,7 @@
                 </li>
                 <li class="smenu__item ">
                     <a href="" class="smenu__trigger smenu__trigger_diet">
-                        <span class="smenu__title">диетическое</span>
+                        <div class="smenu__title">диетическое</div>
                     </a>
                     <div class="smenu__content">
                         <p class="smenu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet
@@ -374,7 +351,7 @@
                         <div class="review__img review__img_one"></div>
                         <div class="review__content">
                             <h5 class="review__title">Алиса Майер</h5>
-                            <div class="review__description">Те, кто может отказаться от свободы ради безопасности, не достоин ни свободы, ни безопасности
+                            <div class="review__description">Те, кто может отказаться от свободы ради безопасности, не достойны ни свободы, ни безопасности
                             </div>
                             <div class="review__button">
                                 <button class="button button_review">подробнее</button>
@@ -446,7 +423,7 @@
                         <div class="review__img review__img_six"></div>
                         <div class="review__content">
                             <h5 class="review__title">София Дэй</h5>
-                            <div class="review__description">Мы – поколение сильнейших и умнейших людей, которые когда-либо жили. С потенциалом, который растрачивается впустую. Целое поколение работников бензоколонок, официантов – рабов в белых воротничках. Реклама заставляет нас покупать тачки и тряпки. Мы вкалываем на ненавистных работах, чтобы купить ненужное нам дерьмо.
+                            <div class="review__description">Мы – поколение сильнейших и умнейших людей, которые когда-либо жили. С потенциалом, который растрачивается впустую. Целое поколение работников бензоколонок, официантов – рабов в белых воротничках.
                             </div>
                             <div class="review__button">
                                 <button class="button button_review">подробнее</button>
@@ -687,7 +664,7 @@
     </div>
 </div>
 
-<script src="full-menu.js"></script>
+
 <script src="menu.js"></script>
 <script src="team.js"></script>
 <script type="template" id="overlayTemplate">
@@ -707,6 +684,32 @@
         </div>
     </div>
 </script>
+<script type="template" id="fullMenu">
+    <section class="section full-menu">
+        <div class="container_full-menu">
+            <div class="full-menu__logo">
+                <a href="#" class="logo__link">
+                    <img src="./img/svg/logo.svg" alt="logo__img" class="logo__img">
+                </a>
+            </div>
+            <div class="full-menu__close">
+                <div class="cross">
+                    <div class="cross__span cross__span_first"></div>
+                    <div class="cross__span cross__span_second"></div>
+                </div>
+            </div>
+            <ul class="full-menu__list">
+                <li class="full-menu__item"><a href="" class="full-menu__link">о нас</a></li>
+                <li class="full-menu__item"><a href="" class="full-menu__link">бургеры</a></li>
+                <li class="full-menu__item"><a href="" class="full-menu__link">команда</a></li>
+                <li class="full-menu__item"><a href="" class="full-menu__link">меню</a></li>
+                <li class="full-menu__item"><a href="" class="full-menu__link">отзывы</a></li>
+                <li class="full-menu__item"><a href="" class="full-menu__link">контакты</a></li>
+            </ul>
+        </div>
+    </section>
+</script>
 <script src="popup.js"></script>
+<script src="full-menu.js"></script>
 </body>
 </html>
