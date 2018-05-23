@@ -4,10 +4,13 @@
 	position: relative;
     //min-width: rem(940px)+rem(20px);
     min-height: 100%;
+  overflow: hidden;
 }
 .maincontent {
     height: 100%;
     min-height: rem(650px);
+    transition: 1s;
+  position: relative;
 }
 .container {
 	width: 95%;

@@ -10,6 +10,7 @@
 }
 .burgers{
   margin: 0 rem(10px);
+  width: rem(940px);
   overflow: hidden;
   @include tablets{
     margin: 0;
@@ -26,9 +27,6 @@
   @include phones{
     width: 100%;
   }
-}
-.burgers__item{
-  width: 100%;
 }
 .burgers__slide{
   display: flex;
