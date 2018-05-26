@@ -21,7 +21,7 @@
 <body>
 <div class="wrapper">
     <main class="maincontent">
-        <section class="section make active">
+        <section class="section make">
             <div class="container container_make">
                 <header class="header">
                     <div class="logo">
@@ -32,17 +32,17 @@
                     <div class="menu">
                         <nav class="nav">
                             <ul class="nav__list">
-                                <li class="nav__item"><a href="" class="nav__link">о нас</a></li>
-                                <li class="nav__item"><a href="" class="nav__link">бургеры</a></li>
-                                <li class="nav__item"><a href="" class="nav__link">команда</a></li>
-                                <li class="nav__item"><a href="" class="nav__link">меню</a></li>
-                                <li class="nav__item"><a href="" class="nav__link">отзывы</a></li>
-                                <li class="nav__item"><a href="" class="nav__link">контакты</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="1">о нас</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="2">бургеры</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="3">команда</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="4">меню</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="5">отзывы</a></li>
+                                <li class="nav__item"><a href="#" class="nav__link" data-number="6">контакты</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="order">
-                        <button class=" button button_order">заказать</button>
+                        <button class=" button button_order" data-number="6">заказать</button>
                     </div>
                     <div class="hamburger">
                         <ul class="hamburger__list">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <svg class="arrow__img" width="40" height="40">
+                    <svg class="arrow__img" width="40" height="40" data-number="1">
                         <use xlink:href="./img/svg/sprite/mysprite.svg#arrow-scroll"></use>
                     </svg>
                 </div>
@@ -211,7 +211,7 @@
                                 <div class="price">
                                     <div class="price__money"><span class="price__value">500</span> рублей</div>
                                     <div class="order order_burger">
-                                        <button class=" button button_order">заказать</button>
+                                        <button class=" button button_order"  data-number="6">заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@
                                 <div class="price">
                                     <div class="price__money"><span class="price__value">500</span> рублей</div>
                                     <div class="order order_burger">
-                                        <button class=" button button_order">заказать</button>
+                                        <button class=" button button_order"  data-number="6">заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@
                                 <div class="price">
                                     <div class="price__money"><span class="price__value">500</span> рублей</div>
                                     <div class="order order_burger">
-                                        <button class=" button button_order">заказать</button>
+                                        <button class=" button button_order"  data-number="6">заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@
                                 <div class="price">
                                     <div class="price__money"><span class="price__value">500</span> рублей</div>
                                     <div class="order order_burger">
-                                        <button class=" button button_order">заказать</button>
+                                        <button class=" button button_order"  data-number="6">заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -579,13 +579,12 @@
                                 <div class="price">
                                     <div class="price__money"><span class="price__value">500</span> рублей</div>
                                     <div class="order order_burger">
-                                        <button class=" button button_order">заказать</button>
+                                        <button class=" button button_order" data-number="6">заказать</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-
                 </ul>
             </div>
             <a href="#" class="right-arrow">
@@ -1017,7 +1016,9 @@
     </div>
 </div>
 
-<script src="libraries/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 <script type="template" id="overlayTemplate">
     <div class="wrap-overlay">
         <div class="overlay">
@@ -1050,15 +1051,25 @@
                 </div>
             </div>
             <ul class="full-menu__list">
-                <li class="full-menu__item"><a href="" class="full-menu__link">о нас</a></li>
-                <li class="full-menu__item"><a href="" class="full-menu__link">бургеры</a></li>
-                <li class="full-menu__item"><a href="" class="full-menu__link">команда</a></li>
-                <li class="full-menu__item"><a href="" class="full-menu__link">меню</a></li>
-                <li class="full-menu__item"><a href="" class="full-menu__link">отзывы</a></li>
-                <li class="full-menu__item"><a href="" class="full-menu__link">контакты</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="1">о нас</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="2">бургеры</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="3">команда</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="4">меню</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="5">отзывы</a></li>
+                <li class="full-menu__item"><a href="#" class="full-menu__link"  data-number="6">контакты</a></li>
             </ul>
         </div>
     </section>
+</script>
+<script type="template" id="formMessage">
+    <div class="wrap-overlay">
+        <div class="overlay">
+            <div class="message message_submit">
+                <div class="message__submit"></div>
+                <button class="button button_order button_order-close">Закрыть</button>
+            </div>
+        </div>
+    </div>
 </script>
 <script src="js/menu.js"></script>
 <script src="js/team.js"></script>

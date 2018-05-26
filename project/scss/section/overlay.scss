@@ -50,3 +50,22 @@
 .cross__span_color_orange{
   background-color: #ec8468;
 }
+.message_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message__submit{
+  color: black;
+  margin-bottom: rem(20px);
+  font-size: rem(14px);
+
+}
+.message_submit{
+  max-width: rem(250px);
+  padding-bottom: 10px;
+}
+.button_order-close{
+  margin: 0;
+}

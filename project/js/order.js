@@ -9,19 +9,15 @@ function submitForm(e) {
 
 
     request.done(function (msg) {
-        let mes = msg.mes,
-            status = msg.status;
-
-        if (status === 'OK') {
-            form.append('<p class="success">' + mes + '</p>');
-        } else {
-            form.append('<p class="error">' + mes + '</p>');
-        }
+        let mes = msg.mes;
+            overlay.messageSubmit.innerHTML = mes;
     });
+
     request.fail(function (jqXHR, textStatus) {
-        alert("Request failed: " + textStatus);
+        overlay.messageSubmit.innerHTML = "Request failed: " + textStatus;
     });
 
+    overlay.open();
 };
 
 // Универсальная функция для работы с формами
@@ -38,3 +34,38 @@ let ajaxForm = function (form) {
     })
 };
 
+    let delivery = document.querySelector('.delivery');
+    let template = document.querySelector('#formMessage').innerHTML;
+    let overlay = createOverlay(template);
+
+
+    function createOverlay(template) {
+        let fragment = document.createElement('div');
+
+        fragment.innerHTML = template;
+
+        let wrapOverlayElement = fragment.querySelector('.wrap-overlay');
+        let overlayElement = fragment.querySelector('.overlay');
+        let closeElement = fragment.querySelector('.button_order-close');
+        let messageSubmit = fragment.querySelector('.message__submit');
+
+
+        fragment = null;
+
+        wrapOverlayElement.addEventListener('click', function (e) {
+            if (e.target === overlayElement) {
+                closeElement.click();
+            }
+        });
+
+        closeElement.addEventListener('click', function () {
+            delivery.removeChild(wrapOverlayElement);
+        });
+
+        return {
+            messageSubmit,
+            open() {
+                delivery.insertBefore(wrapOverlayElement, delivery.firstChild);
+            }
+        }
+    }
