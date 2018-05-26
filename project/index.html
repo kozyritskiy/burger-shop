@@ -834,26 +834,26 @@
         <section class="section delivery">
             <div class="container container_delivery">
                 <h2 class="title title_delivery">закажите доставку</h2>
-                <form action="" class="form">
+                <form action="server.php" method="post" class="form" id="order-form">
                     <fieldset class="fieldset left-field">
                         <div class="info">
                             <div class="info__name">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Имя</div>
-                                    <input type="text" placeholder="Max" class="left-field__input">
+                                    <input type="text" placeholder="Max" class="left-field__input" name="user-name">
                                 </label>
                             </div>
                             <div class="info__phone">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Телефон</div>
-                                    <input type="text" placeholder="8-029-234-32-32" class="left-field__input">
+                                    <input type="text" placeholder="8-029-234-32-32" class="left-field__input" name="user-number">
                                 </label>
                             </div>
                         </div>
                         <div class="street">
                             <label for="" class="left-field__label">
                                 <div class="left-field__name">Улица</div>
-                                <input type="text" placeholder="Street" class="left-field__input">
+                                <input type="text" placeholder="Street" class="left-field__input" name="street">
                             </label>
                         </div>
                         <div class="addres">
@@ -861,28 +861,28 @@
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Дом</div>
                                     <input type="text" placeholder="#"
-                                           class="left-field__input left-field__input_center">
+                                           class="left-field__input left-field__input_center" name="house">
                                 </label>
                             </div>
                             <div class="addres__corps">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Корпус</div>
                                     <input type="text" placeholder="#"
-                                           class="left-field__input left-field__input_center">
+                                           class="left-field__input left-field__input_center" name="housing">
                                 </label>
                             </div>
                             <div class="addres__flat">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Квартира</div>
                                     <input type="text" placeholder="#"
-                                           class="left-field__input left-field__input_center">
+                                           class="left-field__input left-field__input_center" name="apartment">
                                 </label>
                             </div>
                             <div class="addres__floor">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Этаж</div>
                                     <input type="text" placeholder="#"
-                                           class="left-field__input left-field__input_center">
+                                           class="left-field__input left-field__input_center" name="floor">
                                 </label>
                             </div>
                         </div>
@@ -900,7 +900,7 @@
                                 <div class="pay__cash">
                                     <label class="right-field__label right-field__label_pay">
                                         <input class="right-field__radio visuallyhidden" type="radio" name="pay"
-                                               value="">
+                                               value="Потребуется сдача">
                                         <div class="radio-style">
                                             <div class="radio-style__inner"></div>
                                         </div>
@@ -910,7 +910,7 @@
                                 <div class="pay__card">
                                     <label class="right-field__label right-field__label_pay">
                                         <input class="right-field__radio visuallyhidden" type="radio" name="pay"
-                                               value="">
+                                               value="Оплата по карте">
                                         <div class="radio-style">
                                             <div class="radio-style__inner"></div>
                                         </div>
@@ -920,8 +920,8 @@
                             </div>
                             <div class="recall">
                                 <label class="right-field__label right-field__label_recall">
-                                    <input class="right-field__checkbox visuallyhidden" type="checkbox" name=""
-                                           value="">
+                                    <input class="right-field__checkbox visuallyhidden" type="checkbox" name="dont-call"
+                                           value="1">
                                     <div class="checkbox-style">
                                         <div class="checkbox-style__inner"></div>
                                     </div>
@@ -930,8 +930,8 @@
                             </div>
                         </div>
                         <div class="submit">
-                            <button class="button button_submit">заказать</button>
-                            <button class="button button_clean">очистить</button>
+                            <button type="submit" class="button button_submit">заказать</button>
+                            <button class="button button_clean" type="reset" id="clear-btn">очистить</button>
                         </div>
                     </fieldset>
                 </form>
@@ -1017,9 +1017,7 @@
     </div>
 </div>
 
-
-<script src="menu.js"></script>
-<script src="team.js"></script>
+<script src="libraries/jquery-3.3.1.min.js"></script>
 <script type="template" id="overlayTemplate">
     <div class="wrap-overlay">
         <div class="overlay">
@@ -1062,9 +1060,13 @@
         </div>
     </section>
 </script>
-<script src="popup.js"></script>
-<script src="full-menu.js"></script>
-<script src="slider.js"></script>
-<script src="onepagescl.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/team.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/full-menu.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/ops.js"></script>
+<script src="js/order.js"></script>
+
 </body>
 </html>
