@@ -1,3 +1,4 @@
+(function () {
 let smenuList = document.querySelector(".smenu__list");
 
 smenuList.addEventListener('click', function (e) {
@@ -48,4 +49,4 @@ function mobileMediaRequest(width) {
     });
     return promise;
 }
-
+}());

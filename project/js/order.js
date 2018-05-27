@@ -23,7 +23,7 @@ function submitForm(e) {
 // Универсальная функция для работы с формами
 let ajaxForm = function (form) {
     let data = form.serialize(),
-        url = form.attr('action');
+        url = form.attr('action'),
         type = form.attr('method');
 
     return $.ajax({
