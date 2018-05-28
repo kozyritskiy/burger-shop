@@ -845,7 +845,7 @@
                             <div class="info__phone">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Телефон</div>
-                                    <input type="text" placeholder="8-029-234-32-32" class="left-field__input" name="user-number">
+                                    <input type="tel" placeholder="8-029-234-32-32" class="left-field__input" name="user-number" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
                                 </label>
                             </div>
                         </div>
@@ -937,6 +937,7 @@
             </div>
         </section>
         <section class="section map">
+            <div id="map"></div>
             <footer class="footer">
                 <div class="container container_footer">
                     <div class="location">
@@ -1019,6 +1020,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZDnQvtQb04uof31Rb6FBjoUNk39yZopM&callback=initMap">
+</script>
 <script type="template" id="overlayTemplate">
     <div class="wrap-overlay">
         <div class="overlay">
@@ -1072,6 +1077,7 @@
     </div>
 </script>
 <script src="js/main.min.js"></script>
+
 
 
 </body>
