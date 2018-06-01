@@ -7,7 +7,7 @@ function initMap() {
         mapTypeId: 'roadmap'
     });
 
-    let iconBase = './img/markers/';
+    let iconBase = './svg/';
     let icons = {
         shop: {
             icon: iconBase + 'map-marker.svg'

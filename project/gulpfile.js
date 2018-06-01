@@ -70,16 +70,28 @@ function imgMin() {
         .pipe(imageMin())
         .pipe(gulp.dest(paths.build + 'img/'));
 }
+function fonts() {
+    return gulp.src(paths.src + 'fonts/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest(paths.build + 'fonts/'));
+}
+function svg() {
+    return gulp.src(paths.src + 'svg/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest(paths.build + 'svg/'));
+}
 
 function clean() {
     return del('build/')
 }
 
 function watch() {
-    gulp.watch(paths.src + 'scss/*.scss', styles);
-    gulp.watch(paths.src + 'js/*.js', scripts);
+    gulp.watch(paths.src + 'scss/**/*.scss', styles);
+    gulp.watch(paths.src + 'js/**/*.js', scripts);
     gulp.watch(paths.src + '*.html', htmls);
     gulp.watch(paths.src + 'img/**/*', imgMin);
+    gulp.watch(paths.src + 'fonts/**/*', fonts);
+    gulp.watch(paths.src + 'svg/**/*', svg);
 }
 
 function serve() {
@@ -95,6 +107,8 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.htmls = htmls;
 exports.imgMIn = imgMin;
+exports.fonts = fonts;
+exports.svg = svg;
 exports.clean = clean;
 exports.watch = watch;
 
@@ -103,12 +117,12 @@ gulp.task('build', gulp.series(
     //styles
     // scripts,
     // htmls
-    gulp.parallel(styles, scripts, htmls, imgMin)
+    gulp.parallel(styles, scripts, htmls, imgMin, fonts, svg)
 ));
 
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, scripts, htmls, imgMin),
+    gulp.parallel(styles, scripts, htmls, imgMin, fonts, svg),
     gulp.parallel(watch, serve)
 ));
