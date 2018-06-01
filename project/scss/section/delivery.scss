@@ -56,6 +56,15 @@
 }
 .info__name, .info__phone{
   width: 48%;
+  position: relative;
+  > label{
+    position: absolute;
+    top: rem(35px);
+    left: rem(20px);
+    color:  #2f3234;
+    font-size: rem(14px);
+    font-weight: 300;
+  }
 }
 .addres{
   display: flex;
@@ -76,6 +85,21 @@
 .left-field__input{
   width: 100%;
   height: 35px;
+  &:valid{
+    background: url(../svg/checked.svg);
+    background-size: rem(20px);
+    background-repeat: no-repeat;
+    background-position: rem(10px) rem(20px);
+    background-color: #fff;
+    & + label {
+      opacity: 0;
+    }
+  }
+  &:focus {
+    & + label {
+      opacity: 0;
+    }
+  }
 }
 
 .right-field__text {
@@ -105,11 +129,22 @@
 .title_delivery{
   margin-bottom: rem(45px);
 }
+.street{
+  position: relative;
+  > label{
+    position: absolute;
+    top: rem(35px);
+    left: rem(20px);
+    color:  #2f3234;
+    font-size: rem(14px);
+    font-weight: 300;
+  }
+}
 .info, .street{
   margin-bottom: rem(20px);
 }
 .info .left-field__input, .street .left-field__input{
-  padding-left: rem(20px);
+  padding-left: rem(40px);
 
 }
 .pay{

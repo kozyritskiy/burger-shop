@@ -836,50 +836,47 @@
                     <fieldset class="fieldset left-field">
                         <div class="info">
                             <div class="info__name">
-                                <label for="" class="left-field__label">
-                                    <div class="left-field__name">Имя</div>
-                                    <input type="text" placeholder="Max" class="left-field__input" name="user-name">
-                                </label>
+                                <div class="left-field__name">Имя</div>
+                                <input required type="text" class="left-field__input" name="user-name" id="max">
+                                <label for="max" class="left-field__label">Мах</label>
                             </div>
                             <div class="info__phone">
-                                <label for="" class="left-field__label">
-                                    <div class="left-field__name">Телефон</div>
-                                    <input type="tel" placeholder="8-029-234-32-32" class="left-field__input" name="user-number" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
-                                </label>
+                                <div class="left-field__name">Телефон</div>
+                                <input required type="tel"  class="left-field__input" name="user-number"  minlength="11" maxlength="18" id="phone">
+                                <label for="phone" class="left-field__label">8 044 234 23 12</label>
                             </div>
                         </div>
                         <div class="street">
-                            <label for="" class="left-field__label">
-                                <div class="left-field__name">Улица</div>
-                                <input type="text" placeholder="Street" class="left-field__input" name="street">
-                            </label>
+                            <div class="left-field__name">Улица</div>
+                            <input required type="text"  class="left-field__input" name="street" id="street">
+                            <label for="street" class="left-field__label">Street</label>
                         </div>
                         <div class="addres">
                             <div class="addres__house">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Дом</div>
-                                    <input type="text" placeholder="#"
+                                    <input required type="text" placeholder="#"
                                            class="left-field__input left-field__input_center" name="house">
                                 </label>
                             </div>
                             <div class="addres__corps">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Корпус</div>
-                                    <input type="text" placeholder="#"
+                                    <input required type="text" placeholder="#"
                                            class="left-field__input left-field__input_center" name="housing">
                                 </label>
                             </div>
                             <div class="addres__flat">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Квартира</div>
-                                    <input type="text" placeholder="#"
+                                    <input required type="text" placeholder="#"
                                            class="left-field__input left-field__input_center" name="apartment">
                                 </label>
                             </div>
                             <div class="addres__floor">
                                 <label for="" class="left-field__label">
                                     <div class="left-field__name">Этаж</div>
-                                    <input type="text" placeholder="#"
+                                    <input required type="text" placeholder="#"
                                            class="left-field__input left-field__input_center" name="floor">
                                 </label>
                             </div>
