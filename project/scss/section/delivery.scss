@@ -64,6 +64,12 @@
     color:  #2f3234;
     font-size: rem(14px);
     font-weight: 300;
+    @include tablets{
+      top: rem(37px);
+    }
+    @include phones{
+      top: rem(42px);
+    }
   }
 }
 .addres{
@@ -138,6 +144,12 @@
     color:  #2f3234;
     font-size: rem(14px);
     font-weight: 300;
+    @include tablets{
+      top: rem(37px);
+    }
+    @include phones{
+      top: rem(42px);
+    }
   }
 }
 .info, .street{
@@ -192,6 +204,7 @@
   color: #2f3234;
   margin-left: rem(10px);
 }
+
 .check{
   margin-bottom: rem(20px);
   @include phones{

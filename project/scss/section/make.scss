@@ -57,6 +57,9 @@
 	font-size: rem(13px);
 	font-weight: 500;
 	font-family: Ubuntu;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 .button_order{
 	background-color: $orange;

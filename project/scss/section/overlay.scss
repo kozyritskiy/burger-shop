@@ -68,4 +68,7 @@
 }
 .button_order-close{
   margin: 0;
+  @include tablets{
+    margin: 0;
+  }
 }
